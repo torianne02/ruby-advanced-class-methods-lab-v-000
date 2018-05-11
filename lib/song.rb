@@ -18,6 +18,7 @@ class Song
 
   def Song.new_by_name(name)
     @name = name
+    return Song
   end
 
   def Song.create_by_name(name)
