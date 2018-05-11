@@ -33,7 +33,14 @@ class Song
     @@all.detect {|song| song.name == song_name}
   end
 
-  def self.find_or_create_by_name(name)
+  def self.find_or_create_by_name(song_name)
+    if @@all.include?(song_name)
+      return @@all[song_name]
+    else
+      new_song = self.new
+      new_song.name = song_name
+      @@all << new_song
+      new_song
   end
 
   def self.alphabetical
