@@ -40,7 +40,7 @@ class Song
       new_song = self.new
       new_song.name = song_name
       @@all << new_song
-      new_song
+      return new_song
     end
   end
 
