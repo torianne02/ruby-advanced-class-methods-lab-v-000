@@ -41,6 +41,7 @@ class Song
       new_song.name = song_name
       @@all << new_song
       new_song
+    end
   end
 
   def self.alphabetical
