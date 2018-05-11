@@ -50,9 +50,8 @@ class Song
     artist_name = filename_split[0]
     song_name = filename_split[1].delete([".mp3"])
     new_song = self.new
-    new_song.name = song_name
-    new_song.artist_name = artist_name
-    new_song
+    new_song.name = song_name.join
+    new_song.artist_name = artist_name.join
   end
 
   def self.create_from_filename
